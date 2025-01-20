@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&A Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: hsl(0, 91%, 50%);
+            color: #ffffff;
+        }
+
+        .header .logo h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .header .user-info {
+            text-align: right;
+        }
+
+        .header .points {
+            font-weight: 500;
+        }
+
+        /* Dashboard Layout */
+        .dashboard {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: hsl(7, 4%, 49%);
+            color: #ffffff;
+            padding: 1rem;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .content {
+            width: 80%;
+            padding: 2rem;
+        }
+
+        /* Rotating Slider */
+        .rotating-slider {
+            position: relative;
+            margin-bottom: 2rem;
+            text-align: center;
+            overflow: hidden;
+            height: 350px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .employee-card {
+            flex: 0 0 100%;
+            max-width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .employee-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 60%;
+            margin-bottom: 1rem;
+        }
+
+        .employee-card h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #004d99;
+        }
+
+        .employee-card p {
+            margin: 0.3rem 0;
+            color: #555;
+        }
+
+        /* Branch Overview */
+        .branch-overview {
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .branch-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .branch-card h4 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #004d99;
+            font-weight: 700;
+        }
+
+        .branch-card p {
+            margin: 0.3rem 0;
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .branch-card:hover {
+            cursor: pointer;
+            background-color: #f0f8ff;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Search and Filter Tools */
+        .search-filter {
+            margin-bottom: 2rem;
+        }
+
+        .search-filter input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        footer.footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: hsl(0, 92%, 49%);
+            color: #ffffff;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>C&A Connect</h1>
+        </div>
+        <div class="user-info">
+            <span> Welcome To C&A Connect</span>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="rotating-slider">
+                <h2>Employee of the Quarter 1 2025</h2>
+                <div class="slider-container" id="slider-container">
+                    <div class="employee-card">
+                        <img src="jane.jpeg" alt="Employee Photo">
+                        <h3>Jane </h3>
+                        <p>Branch: Village mall</p>
+                        <p>Role: Supervisor</p>
+                        <p>Achievements: Outstanding teamwork and leadership.</p>
+                    </div>
+                    <div class="employee-card">
+                        <img src="chris.jpeg" alt="Employee Photo">
+                        <h3>Magezi christopher</h3>
+                        <p>Branch: Bugolobi</p>
+                        <p>Role: Dispenser</p>
+                        <p>Achievements: Exceeded sales targets by 30%.</p>
+                    </div>
+                    <div class="employee-card">
+                        <img src="jonah.jpeg" alt="Employee Photo">
+                        <h3>Jonah Lubega</h3>
+                        <p>Branch: Kabalagala</p>
+                        <p>Role: Dispenser</p>
+                        <p>Achievements: Innovated stock management process.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="branch-overview">
+                <h2>Branch Overview</h2>
+                <div class="branch-card"> <a href="Bugolobi.html" class="branch-card"></a>
+                    <h4>Branch: Bugolobi</h4>
+                    <p>Total Employees: 10</p>
+                    <p>Team Lead: Namuddu Angella</p>
+                </div>              
+                <div class="branch-card"> <a href="mall.html" class="branch-card"></a>
+                    <h4>Branch: Village Mall</h4>
+                    <p>Total Employees: 12</p>
+                    <p>Team Lead: Chandilu Julian</p>
+                </div>
+                <div class="branch-card"> <a href="kabalagala.html" class="branch-card"></a>
+                    <h4>Branch: kabalagala</h4>
+                    <p>Total Employees: 10</p>
+                    <p>Team Lead: Carol Wada</p>
+                </div>
+                <div class="branch-card"> <a href="warehouse.html" class="branch-card"></a>
+                    <h4>Branch: warehouse</h4>
+                    <p>Total Employees: 8</p>
+                    <p>Team Lead: Robert Lubowa</p>
+                </div>
+                <div class="branch-card" > <a href="acacia.html" class="branch-card"></a>
+                    <h4>Branch: Acacia</h4>
+                    <p>Total Employees: 5</p>
+                    <p>Team Lead: Grace Akwandanaho</p>
+                </div>
+        
+            </section>
+
+            <section class="search-filter">
+                <h2>Search Employees</h2>
+                <input type="text" id="search-bar" placeholder="Search by Name, Role, or Branch" oninput="filterEmployees()">
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 C&A Pharmaceuticals. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const sliderContainer = document.getElementById('slider-container');
+        let currentIndex = 0;
+
+        function rotateSlider() {
+            currentIndex++;
+            if (currentIndex >= sliderContainer.children.length) {
+                currentIndex = 0;
+            }
+            sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(rotateSlider, 3000); // Rotate every 3 seconds
+
+        function showBranchDetails(branchName) {
+            alert(`Navigating to details for ${branchName} branch...`);
+            // Logic for showing branch employee profiles goes here
+        }
+
+        function filterEmployees() {
+            const searchBar = document.getElementById('search-bar');
+            const searchTerm = searchBar.value.toLowerCase();
+            console.log(`Filtering employees with term: ${searchTerm}`);
+            // Implement filter logic based on employee database
+        }
+    </script>
+</body>
+</html>

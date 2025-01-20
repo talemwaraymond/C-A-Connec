@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Branch - C&A Connect</title>
+    <link rel="stylesheet" href="styles/branch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: hsl(9, 86%, 49%);
+    color: #ffffff;
+}
+
+.branch-name h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.branch-content {
+    padding: 2rem;
+}
+
+.employee-grid h3 {
+    margin-bottom: 1rem;
+    color: #e9410e;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.employee-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.employee-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.employee-card h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #180b0b;
+}
+
+.employee-card p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.employee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fc2702;
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>C&A Connect</h1>
+        </div>
+        <div class="branch-name">
+            <h2>Kabalagala Branch</h2>
+        </div>
+    </header>
+
+    <main class="branch-content">
+        <section class="employee-grid">
+            <h3>Employees</h3>
+            <div class="grid-container">
+                <div class="employee-card">
+                    <img src="assets/images/employee1.jpg" alt="Joseph">
+                    <h4>Seguya Joseph</h4>
+                    <p>Role: Head of Operations</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Wada">
+                    <h4>Carol Wada </h4>
+                    <p>Role: Supervisor</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Achan">
+                    <h4>Charity Achan</h4>
+                    <p>Role: Dispenser </p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Raymond">
+                    <h4>Talemwa Raymond</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Part-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Racheal">
+                    <h4>Birungi Racheal</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Part-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Samuel">
+                    <h4>Ogenrwot Samuel</h4>
+                    <p>Role:Dispenser</p>
+                    <p>Shift: Part-time</p>
+                </div>
+                <div class="employee-card" >
+                    <img src="assets/images/employee2.jpg" alt="Patrick">
+                    <h4>Machokozi Patrick</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Part-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Sharon">
+                    <h4>Turumanya Sharon</h4>
+                    <p>Role: Accountant </p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Pius">
+                    <h4>Onoria Pius</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Jackline">
+                    <h4>Mbabazi Jackline</h4>
+                    <p>Role: Cashier</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="jonah.jpeg" alt="Jonah">
+                    <h4>Lubega Jonah Mukisa</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Part-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Raymond">
+                    <h4>Raymond Musiime</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="CONCY">
+                    <h4>Amito Concy</h4>
+                    <p>Role: Cashier</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Peterson">
+                    <h4>Lopeyok Peterson</h4>
+                    <p>Role: Dispenser</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="Kalungi">
+                    <h4>Kalungi Sheildonnah</h4>
+                    <p>Role: C-X assisstant</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <div class="employee-card">
+                    <img src="assets/images/employee2.jpg" alt="David">
+                    <h4>David Nakejju</h4>
+                    <p>Role: Janitor</p>
+                    <p>Shift: Full-time</p>
+                </div>
+                <!-- Add more employee cards as needed -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 C&A Pharmaceuticals. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function navigateToProfile(employeeId) {
+            window.location.href = `profile.html?id=${employeeId}`;
+        }
+    </script>
+</body>
+</html>
